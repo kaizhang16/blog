@@ -8,7 +8,7 @@
     {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
     {{ range sort .Paginator.Pages }}
     <article>
-      <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
+      <h1 class="title"><a href="{{ .Permalink | relLangURL }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
       <div class="subtitle tags is-6 is-pulled-right">
         {{ if .Params.tags }}
         {{ partial "tags" .Params.tags }}
