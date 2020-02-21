@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>凯的博客</title>
+    <link>http://example.org/</link>
+    <description>Recent content on 凯的博客</description>
+    <generator>Hugo - gohugo.io</generator>
+    <language>en</language>
+    <contact></contact>
+    <copyright></copyright>
+    
+        <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Posts</title>
+      <link>http://example.org/posts/</link>
+      <pubDate>Thu, 20 Feb 2020 15:35:10 +0800</pubDate>
+      <author></author>
+      <guid>http://example.org/posts/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

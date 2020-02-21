@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数学 on 凯的博客</title>
+    <link>http://example.org/tags/%E6%95%B0%E5%AD%A6/</link>
+    <description>Recent content in 数学 on 凯的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Thu, 20 Feb 2020 15:35:10 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>对齐坐标系</title>
+      <link>http://example.org/posts/2020-02-20-align-coordinate-system/</link>
+      <pubDate>Thu, 20 Feb 2020 15:35:10 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2020-02-20-align-coordinate-system/</guid>
+      <description>背景 给定两组坐标 \(\{\vec{p}_i \mid 1 \le i \le m\}\) 和 \(\{\vec{q}_i \mid 1 \le i \le m\}\)， 求相似变换 \(\transformation{T}\)：
+\[ \transformation{T} = \begin{pmatrix} s\transformation{R} &amp;amp; \vec{t} \\ \transpose{\vec{0}} &amp;amp; 1 \end{pmatrix} \qquad(1)\]
+使得
+\[\sum_{i=1}^m \lvert\hat{\vec{q}}_i- \vec{q}_i\rvert^2\qquad(2)\]
+最小。其中，
+\[\hat{\vec{q}}_i = \transformation{R}\vec{p}_i + \vec{t}\qquad(3)\]
+\(\transformation{R}\) 为正交矩阵，且 \(\det(\matrix{R}) = 1\)。
+计算方法[1] 计算两组坐标的平均值：
+\[\bar{\vec{p}} = \frac{1}{m}\sum_{i=1}^m \vec{p}_i\qquad(4)\] \[\bar{\vec{q}} = \frac{1}{m}\sum_{i=1}^m \vec{q}_i\qquad(5)\]
+计算矩阵：
+\[ \begin{align} \matrix{O} &amp;amp;= \sum_{i=1}^m (\vec{q}_i - \bar{\vec{q}})\transpose{(\vec{p}_i - \bar{\vec{p}})} \\ &amp;amp;= \sum_{i=1}^m \vec{q}_i\transpose{\vec{p}_i} - m\bar{\vec{q}}\transpose{\bar{\vec{p}}} \end{align} \qquad(6)\]</description>
+    </item>
+    
+  </channel>
+</rss>
