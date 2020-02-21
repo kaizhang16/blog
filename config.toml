@@ -1,3 +1,14 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "zh-Hans"
+title = "凯的博客"
+
+theme = "kiss"
+
+[params]
+  dateFormat = "2006-01-02 15:04:05 -0700"
+
+[params.social]
+  github = "kaizhang91"
+
+[params.social.config]
+  platforms = ["github"]
