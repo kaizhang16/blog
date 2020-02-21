@@ -12,3 +12,6 @@ theme = "kiss"
 
 [params.social.config]
   platforms = ["github"]
+
+[permalinks]
+  posts = "/:year/:month/:title/"
