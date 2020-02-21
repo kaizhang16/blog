@@ -79,43 +79,35 @@
 <p>使得</p>
 <p><span id="eq:errorSquare"><span class="math display">\[\sum_{i=1}^m \lvert\hat{\vec{q}}_i- \vec{q}_i\rvert^2\qquad(2)\]</span></span></p>
 <p>最小。其中，</p>
-<p><span id="eq:pToQ"><span class="math display">\[\hat{\vec{q}}_i = \transformation{R}\vec{p}_i + \vec{t}\qquad(3)\]</span></span></p>
+<p><span id="eq:pToQ"><span class="math display">\[\hat{\vec{q}}_i = s\transformation{R}\vec{p}_i + \vec{t}\qquad(3)\]</span></span></p>
 <p><span class="math inline">\(\transformation{R}\)</span> 为正交矩阵，且 <span class="math inline">\(\det(\matrix{R}) = 1\)</span>。</p>
 <h1 id="计算方法mathaligncoordinatesystem">计算方法<span class="citation" data-cites="mathAlignCoordinateSystem"><sup>[<a href="#ref-mathAlignCoordinateSystem" role="doc-biblioref">1</a>]</sup></span></h1>
 <p>计算两组坐标的平均值：</p>
 <p><span id="eq:pBar"><span class="math display">\[\bar{\vec{p}} = \frac{1}{m}\sum_{i=1}^m \vec{p}_i\qquad(4)\]</span></span> <span id="eq:qBar"><span class="math display">\[\bar{\vec{q}} = \frac{1}{m}\sum_{i=1}^m \vec{q}_i\qquad(5)\]</span></span></p>
 <p>计算矩阵：</p>
 <p><span id="eq:O"><span class="math display">\[
-\begin{align}
-\matrix{O} &amp;= \sum_{i=1}^m (\vec{q}_i - \bar{\vec{q}})\transpose{(\vec{p}_i - \bar{\vec{p}})} \\
-           &amp;= \sum_{i=1}^m \vec{q}_i\transpose{\vec{p}_i} - m\bar{\vec{q}}\transpose{\bar{\vec{p}}}
-\end{align}
+\matrix{O} = \sum_{i=1}^m (\vec{q}_i - \bar{\vec{q}})\transpose{(\vec{p}_i - \bar{\vec{p}})}
 \qquad(6)\]</span></span></p>
 <p>计算 <span class="math inline">\(\matrix{O}\)</span> 的奇异值分解：</p>
 <p><span id="eq:OSVD"><span class="math display">\[\matrix{O} = \matrix{U}\matrix{D}\transpose{\matrix{V}}\qquad(7)\]</span></span></p>
 <p>计算 <span class="math inline">\(\{c_j \mid 1 \le j \le n\}\)</span>：</p>
 <p><span id="eq:cj"><span class="math display">\[
-\begin{align}
-c_j &amp;= \sum_{i=1}^m [\matrix{V}(\vec{p}_i - \bar{\vec{p}})]_j[\matrix{U}(\vec{q}_i - \bar{\vec{q}})]_j \\
-    &amp;= \sum_{i=1}^m (\matrix{V}\vec{p}_i)_j(\matrix{U}\vec{q}_i)_j - m(\matrix{V}\bar{\vec{p}})_j(\matrix{U}\bar{\vec{q}})_j
-\end{align}
+c_j = \sum_{i=1}^m [\transpose{\matrix{V}}(\vec{p}_i - \bar{\vec{p}})]_j[\transpose{\matrix{U}}(\vec{q}_i - \bar{\vec{q}})]_j
 \qquad(8)\]</span></span></p>
 <p>记：</p>
 <p><span id="eq:aj"><span class="math display">\[a_j = \sign(c_j)\qquad(9)\]</span></span></p>
 <p>则：</p>
-<p><span id="eq:R"><span class="math display">\[\transformation{R} = \matrix{V}\diag(a_1, \dots, a_n)\transpose{\matrix{U}}\qquad(10)\]</span></span> <span id="eq:t"><span class="math display">\[\vec{t} = \bar{\vec{q}} - \transformation{R}\bar{\vec{p}}\qquad(11)\]</span></span></p>
+<p><span id="eq:R"><span class="math display">\[\transformation{R} = \matrix{U}\diag(a_1, \dots, a_n)\transpose{\matrix{V}}\qquad(10)\]</span></span></p>
 <blockquote>
 <p>如果 <span class="math inline">\(\det(\matrix{R}) &lt; 0\)</span>，需要改变绝对值最小的 <span class="math inline">\(c_j\)</span> 对应的 <span class="math inline">\(a_j\)</span> 的符号。</p>
 </blockquote>
-<p><span class="math inline">\(s\)</span> 可由式. 12 或式. 13 得到，</p>
+<p><span class="math inline">\(s\)</span> 可由式. 11 得到，</p>
 <p><span id="eq:sOriginal"><span class="math display">\[
 s\sum_{i=1}^m\lvert\vec{p}_i - \bar{\vec{p}}\rvert^2 =
   \sum_{i=1}^m\langle\transformation{R}(\vec{p}_i - \bar{\vec{p}}), \vec{q}_i - \bar{\vec{q}}\rangle
-\qquad(12)\]</span></span></p>
-<p><span id="eq:sSimple"><span class="math display">\[
-s\left(\sum_{i=1}^m\lvert\vec{p}_i\rvert^2 - m\lvert\bar{\vec{p}}\rvert^2\right) =
-  \sum_{i=1}^m\langle\transformation{R}\vec{p}_i, \vec{q}_i\rangle - m\langle\transformation{R}\bar{\vec{p}}, \bar{\vec{q}}\rangle
-\qquad(13)\]</span></span></p>
+\qquad(11)\]</span></span></p>
+<p>最后，</p>
+<p><span id="eq:t"><span class="math display">\[\vec{t} = \bar{\vec{q}} - s\transformation{R}\bar{\vec{p}}\qquad(12)\]</span></span></p>
 <h1 class="unnumbered" id="参考文献" class="unnumbered">参考文献</h1>
 <div id="refs" class="references" role="doc-bibliography">
 <div id="ref-mathAlignCoordinateSystem">

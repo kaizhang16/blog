@@ -22,12 +22,13 @@
 使得
 \[\sum_{i=1}^m \lvert\hat{\vec{q}}_i- \vec{q}_i\rvert^2\qquad(2)\]
 最小。其中，
-\[\hat{\vec{q}}_i = \transformation{R}\vec{p}_i + \vec{t}\qquad(3)\]
+\[\hat{\vec{q}}_i = s\transformation{R}\vec{p}_i + \vec{t}\qquad(3)\]
 \(\transformation{R}\) 为正交矩阵，且 \(\det(\matrix{R}) = 1\)。
 计算方法[1] 计算两组坐标的平均值：
 \[\bar{\vec{p}} = \frac{1}{m}\sum_{i=1}^m \vec{p}_i\qquad(4)\] \[\bar{\vec{q}} = \frac{1}{m}\sum_{i=1}^m \vec{q}_i\qquad(5)\]
 计算矩阵：
-\[ \begin{align} \matrix{O} &amp;amp;= \sum_{i=1}^m (\vec{q}_i - \bar{\vec{q}})\transpose{(\vec{p}_i - \bar{\vec{p}})} \\ &amp;amp;= \sum_{i=1}^m \vec{q}_i\transpose{\vec{p}_i} - m\bar{\vec{q}}\transpose{\bar{\vec{p}}} \end{align} \qquad(6)\]</description>
+\[ \matrix{O} = \sum_{i=1}^m (\vec{q}_i - \bar{\vec{q}})\transpose{(\vec{p}_i - \bar{\vec{p}})} \qquad(6)\]
+计算 \(\matrix{O}\) 的奇异值分解：</description>
     </item>
     
   </channel>
