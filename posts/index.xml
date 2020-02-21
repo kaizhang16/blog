@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 凯的博客</title>
-    <link>http://example.org/posts/</link>
+    <link>https://kaizhang91.github.io/blog/posts/</link>
     <description>Recent content in Posts on 凯的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <lastBuildDate>Thu, 20 Feb 2020 15:35:10 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kaizhang91.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>对齐坐标系</title>
-      <link>http://example.org/posts/2020-02-20-align-coordinate-system/</link>
+      <link>https://kaizhang91.github.io/blog/posts/2020-02-20-align-coordinate-system/</link>
       <pubDate>Thu, 20 Feb 2020 15:35:10 +0800</pubDate>
       
-      <guid>http://example.org/posts/2020-02-20-align-coordinate-system/</guid>
+      <guid>https://kaizhang91.github.io/blog/posts/2020-02-20-align-coordinate-system/</guid>
       <description>背景 给定两组坐标 \(\{\vec{p}_i \mid 1 \le i \le m\}\) 和 \(\{\vec{q}_i \mid 1 \le i \le m\}\)， 求相似变换 \(\transformation{T}\)：
 \[ \transformation{T} = \begin{pmatrix} s\transformation{R} &amp;amp; \vec{t} \\ \transpose{\vec{0}} &amp;amp; 1 \end{pmatrix} \qquad(1)\]
 使得
